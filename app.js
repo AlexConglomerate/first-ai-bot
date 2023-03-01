@@ -23,7 +23,7 @@ const start = async () => {
 
         const text = await generateAnswer(message)
 
-        return bot.sendMessage(chatId, 'text');
+        return bot.sendMessage(chatId, text);
     })
 
     const text = chalk.bgGreen(`             `) + chalk.green(` Telegram bot is running  => `) + chalk.green(new Date().toLocaleTimeString())
